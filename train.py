@@ -252,7 +252,7 @@ class Trainer:
         dic_features = {}
         
         if self.args.task == 'PACS':
-            for i in range(self.args.num_extractors)
+            for i in range(self.args.num_extractors):
                 dic_features[i] = torch.zeros(self.batch_size*2, 7, 7).cuda()
         ####################################################################
 
