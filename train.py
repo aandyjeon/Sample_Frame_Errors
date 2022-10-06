@@ -226,7 +226,7 @@ class Trainer:
                     self.results[phase][self.current_epoch] = class_acc
         
             # [ANDY] 
-            if self.current_epoch == (self.args.epoch - 1):
+            if self.current_epoch == (self.args.epochs - 1):
                 self.do_test_save(self.source_loader)
             
     def do_test(self, loader):
